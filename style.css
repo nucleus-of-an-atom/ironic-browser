@@ -1,0 +1,104 @@
+body,html{
+    background: transparent;
+    margin: 0;
+    height:100vh;
+    padding: 0;
+    width:100vw;
+    overflow: hidden;
+    border-radius: 10px;
+}
+button,input{
+  outline:none;
+}
+button:focus,input:focus{
+  border:2px solid #32a852;
+}
+.topbar{
+    height:100px;
+    width:100vw;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 20px;
+    -webkit-app-region:drag;
+}
+.top,.bottom{
+    height:50px;
+    width:100vw;
+    white-space:nowrap;
+}
+.top{
+  border-radius: 10px 10px 0px 0px;
+}
+.bottom{
+  border-radius: 0px 0px 10px 10px;
+}
+.top>*,.bottom>*{
+  -webkit-app-region:no-drag;
+  display: inline-block;
+}
+.closebtn{
+    background: rgba(255, 0, 0, 0.7);
+    height:20px;
+    width:20px;
+    border-radius: 10px;
+    margin: 10px;
+    float: right;
+    border: 0;
+    color:transparent;
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline;
+}
+.closebtn:hover{
+    color:white;
+}
+.tab,.newtab,.back,.reload,.next{
+    background: rgba(255,255,255,0.05);
+    height:40px;
+    width:200px;
+    border:0px;
+    color:white;
+    display: inline-block;
+    border-radius:20px;
+    margin: 5px;
+}
+.newtab,.back,.reload,.next{
+    height:40px;
+    width: 40px;
+    color:white;
+}
+.pages{
+  height:calc(100vh - 110px);
+  width:100vw;
+  margin-top:10px;
+  background: rgba(0,0,0,0.5);
+}
+webview{
+  height:100%;
+  width:100%;
+}
+.navbtns,.url{
+    background: rgba(255,255,255,0.05);
+    height:39px;
+    width:calc(100% - 220px);
+    border:0px;
+    color:white;
+    border-radius:20px;
+    margin: 5px;
+    float: left;
+    margin-left: 210px;
+    position: absolute;
+    text-align: center;
+}
+.navbtns{
+  background: transparent;
+  width:200px;
+  margin-left: 5px;
+}
+.navbtns>*{
+  margin:0px;
+  margin-left: 10px
+}
+
+.active{
+  border:2px solid #32a852;
+}

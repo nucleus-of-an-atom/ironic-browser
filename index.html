@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+</head>
+<body>
+    <div class="topbar">
+        <div class="top">
+            <button class="newtab">+</button>
+            <div class="tabs">
+            </div>
+            <button class="closebtn">×</button>
+        </div>
+        <div class="bottom">
+          <div class="navbtns">
+            <button class="back"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="reload"><i class="fa-solid fa-arrow-rotate-right"></i></button>
+            <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+          <input class="url" type="text" value="" placeholder="about://new-tab-page">
+        </div>
+    </div>
+    <div class="pages">
+      <webview src="" id="wbv"></webview>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="script.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.css">
+<script>if (window.module) module = window.module;</script>
+</html>
